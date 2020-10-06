@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset = "UTF=8">
+        <title>1 Exercicio</title>
+    </head>
+    <body> 
+        <div id="app">
+            <button onclick="criaCaixa()">Clique-me</button>
+        </div>
+        <script>
+            //document.write('Estou só pra atrapalhar')
+            function criaCaixa(){
+                var boxElement = document.createElement('div');
+                boxElement.style.width = 100;
+                boxElement.style.height = 100;
+                boxElement.style.backgroundColor = '#f00';
+
+                var criarElemento = document.querySelector('#app');
+                criarElemento.appendChild(boxElement);
+            }
+        </script>
+    </body>
+</hmtl>
